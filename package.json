@@ -1,0 +1,36 @@
+{
+  "name": "witcherbook",
+  "version": "0.1.0",
+  "description": "The Witcher social network",
+  "main": "dist/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamrozin/witcherbook.git"
+  },
+  "keywords": [
+    "witcher"
+  ],
+  "author": "William Rozin Gaspar",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/williamrozin/witcherbook/issues"
+  },
+  "homepage": "https://github.com/williamrozin/witcherbook#readme",
+  "dependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.8",
+    "html-loader": "^0.5.5",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4"
+  }
+}
