@@ -1,5 +1,5 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-loader')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './src/App.tsx',
