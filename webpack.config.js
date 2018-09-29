@@ -1,7 +1,7 @@
-import path from 'path'
-import HtmlExtractPlugin from 'html-loader'
+const path = require('path')
+const HtmlWebpackPlugin = require('html-loader')
 
-export default {
+module.exports = {
     entry: './src/App.tsx',
     module: {
         rules: [
@@ -22,5 +22,10 @@ export default {
             filename: 'index.html',
             template: './assets/index.html'
         })
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 3000
+    }
 }
