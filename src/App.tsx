@@ -1,13 +1,15 @@
-import * as React from 'react'
-import * as ReactDom from 'react-dom'
+import React, { Component } from 'react'
+import ReactDom from 'react-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
+import HomeContainer from './containers/HomeContainer'
 
-
-class App extends React.Component {
-    /**
-     * render
-     */
+class App extends Component {
     public render() {
-        return 'Hello World!'
+        return (
+            <BrowserRouter>
+                <Route exact path='/' component={ HomeContainer } />
+            </BrowserRouter>
+        )
     }
 }
 

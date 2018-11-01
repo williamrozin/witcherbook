@@ -5,8 +5,10 @@
   "main": "dist/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "build": "webpack"
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "lint:fix": "tslint -c tslint.json -p tsconfig.json --fix"
   },
   "repository": {
     "type": "git",
@@ -22,20 +24,28 @@
   },
   "homepage": "https://github.com/williamrozin/witcherbook#readme",
   "dependencies": {
-    "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.8",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "ts-loader": "^5.2.1",
-    "typescript": "^3.1.1",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
+    "@material-ui/core": "3.3.2",
+    "@material-ui/icons": "3.0.1",
+    "@types/react": "16.4.14",
+    "@types/react-dom": "16.0.8",
+    "@types/react-router": "4.4.0",
+    "@types/react-router-dom": "4.3.1",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "styled-components": "4.0.3",
+    "ts-loader": "5.2.1",
+    "typescript": "3.1.1",
+    "webpack": "4.20.2",
+    "webpack-cli": "3.1.1"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
-    "source-map-loader": "^0.2.4",
-    "webpack-dev-server": "^3.1.9"
+    "awesome-typescript-loader": "5.2.1",
+    "source-map-loader": "0.2.4",
+    "tslint": "^5.11.0",
+    "webpack-dev-server": "3.1.9"
   }
 }
